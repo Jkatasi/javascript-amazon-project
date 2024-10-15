@@ -21,7 +21,7 @@ export function renderOrderSummary() {
         const  deliveryOption = getDeliveryOption(deliveryOptionsId);
        
         const today = dayjs();
-        const deleveryDate = today.add(
+        const deliveryDate = today.add(
             deliveryOptions.deliveryDays,
             'days'
         );
@@ -80,7 +80,7 @@ export function renderOrderSummary() {
             let html = ''
         deliveryOptions.forEach((deliveryOptions)=> {
             const today = dayjs();
-            const deleveryDate = today.add(
+            const deliveryDate = today.add(
                 deliveryOptions.deliveryDays,
                 'days'
             );
